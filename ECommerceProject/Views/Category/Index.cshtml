@@ -1,0 +1,21 @@
+﻿@model List<ECommerceProject.Entities.Category>
+@{
+    Layout = null;
+}
+
+<section class="categories">
+    <div class="container">
+        <div class="row">
+            <div class="categories__slider owl-carousel">
+                @foreach(var item in Model){
+                <div class="col-lg-3">
+                    <div class="categories__item set-bg" data-setbg="img/categories/cat-1.jpg">
+                        <h5><a href="#">@item.CategoryName</a></h5>
+                    </div>
+                </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</section>

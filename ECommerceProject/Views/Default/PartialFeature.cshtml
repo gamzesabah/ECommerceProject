@@ -1,0 +1,26 @@
+﻿@model List<ECommerceProject.Entities.Feature>
+
+@if (Model != null && Model.Any())
+{
+    foreach (var item in Model)
+    {
+        <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+            <div class="featured__item">
+                <div class="featured__item__pic set-bg" data-setbg="@item.ImageUrl">
+                    <ul class="featured__item__pic__hover">
+                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+                <div class="featured__item__text">
+                    <h6><a href="#">@item.Title</a></h6>
+                    @*<h5>@item.Price</h5>*@
+                </div>
+            </div>
+        </div>
+    }
+}
+else
+{
+    <p class="text-center text-muted">Gösterilecek ürün bulunamadı.</p>
+}

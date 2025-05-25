@@ -1,0 +1,22 @@
+﻿@model List<ECommerceProject.Entities.Banner>
+<div class="banner">
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="banner__pic position-relative">
+                        <img src="@item.ImageUrl" alt="" style="width:50%;">
+                        <div class="banner__text">
+                            <h2>@item.Title</h2>
+                            <p>@item.Description</p>
+                            <a href="#" class="btn btn-primary">İncele</a>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+

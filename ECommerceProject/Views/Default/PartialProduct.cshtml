@@ -1,0 +1,58 @@
+﻿@model List<ECommerceProject.Entities.Product>
+@using System.Linq
+
+@functions {
+    public static IEnumerable<List<T>> ChunkBy<T>(IEnumerable<T> source, int chunkSize)
+    {
+        var chunk = new List<T>(chunkSize);
+        foreach (var element in source)
+        {
+            chunk.Add(element);
+            if (chunk.Count == chunkSize)
+            {
+                yield return chunk;
+                chunk = new List<T>(chunkSize);
+            }
+        }
+        if (chunk.Any())
+            yield return chunk;
+    }
+}
+
+<section class="latest-product spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="latest-product__text">
+                    <h4>Latest Products</h4>
+                    @if (Model != null && Model.Any())
+                    {
+                        <div class="latest-product__slider owl-carousel">
+                            @foreach (var chunk in ChunkBy(Model, 3))
+                            {
+                                <div class="latest-prdouct__slider__item">
+                                    @foreach (var item in chunk)
+                                    {
+                                        <a href="#" class="latest-product__item">
+                                            <div class="latest-product__item__pic">
+                                                <img src="@item.ImageUrl" alt="@item.Name">
+                                            </div>
+                                            <div class="latest-product__item__text">
+                                                <h6>@item.Name</h6>
+                                                <span>@item.Price ₺</span>
+                                            </div>
+                                        </a>
+                                    }
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted">Gösterilecek ürün bulunamadı.</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
