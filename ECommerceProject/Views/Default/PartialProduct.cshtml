@@ -1,56 +1,200 @@
-﻿@model List<ECommerceProject.Entities.Product>
-@using System.Linq
-
-@functions {
-    public static IEnumerable<List<T>> ChunkBy<T>(IEnumerable<T> source, int chunkSize)
-    {
-        var chunk = new List<T>(chunkSize);
-        foreach (var element in source)
-        {
-            chunk.Add(element);
-            if (chunk.Count == chunkSize)
-            {
-                yield return chunk;
-                chunk = new List<T>(chunkSize);
-            }
-        }
-        if (chunk.Any())
-            yield return chunk;
-    }
-}
-
-<section class="latest-product spad">
+﻿<section class="latest-product spad">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="latest-product__text">
-                    <h4>Latest Products</h4>
-                    @if (Model != null && Model.Any())
-                    {
-                        <div class="latest-product__slider owl-carousel">
-                            @foreach (var chunk in ChunkBy(Model, 3))
-                            {
-                                <div class="latest-prdouct__slider__item">
-                                    @foreach (var item in chunk)
-                                    {
-                                        <a href="#" class="latest-product__item">
-                                            <div class="latest-product__item__pic">
-                                                <img src="@item.ImageUrl" alt="@item.Name">
-                                            </div>
-                                            <div class="latest-product__item__text">
-                                                <h6>@item.Name</h6>
-                                                <span>@item.Price ₺</span>
-                                            </div>
-                                        </a>
-                                    }
+                    <h4>Kadın</h4>
+                    <div class="latest-product__slider owl-carousel">
+                        <div class="latest-prdouct__slider__item">
+                            <a href="#" class="latest-product__item">
+                                <div class="latest-product__item__pic">
+                                    <img src="~/ogani-master/ogani-master/img/kahverengi kadın ceket.jpg" alt="">
                                 </div>
-                            }
+                                <div class="latest-product__item__text">
+                                    <h6>Ceket</h6>
+                                    <span>1200₺</span>
+                                </div>
+                            </a>
+                            <a href="#" class="latest-product__item">
+                                <div class="latest-product__item__pic">
+                                    <img src="~/ogani-master/ogani-master/img/elbise kadın .jpg" alt="">
+                                </div>
+                                <div class="latest-product__item__text">
+                                    <h6>Elbise</h6>
+                                    <span>900₺</span>
+                                </div>
+                            </a>
+                            <a href="#" class="latest-product__item">
+                                <div class="latest-product__item__pic">
+                                    <img src="~/ogani-master/ogani-master/img/gömlek kadın.jpg" alt="">
+                                </div>
+                                <div class="latest-product__item__text">
+                                    <h6>Gömlek</h6>
+                                    <span>600₺</span>
+                                </div>
+                            </a>
+
                         </div>
-                    }
-                    else
-                    {
-                        <p class="text-muted">Gösterilecek ürün bulunamadı.</p>
-                    }
+                        <div class="latest-prdouct__slider__item">
+                            <a href="#" class="latest-product__item">
+                                <div class="latest-product__item__pic">
+                                    <img src="~/ogani-master/ogani-master/img/çanta kadın.jpg" alt="">
+                                </div>
+                                <div class="latest-product__item__text">
+                                    <h6>Çanta</h6>
+                                    <span>700₺</span>
+                                </div>
+                            </a>
+                            <a href="#" class="latest-product__item">
+                                <div class="latest-product__item__pic">
+                                    <img src="~/ogani-master/ogani-master/img/pantolon kadın.jpg" alt="">
+                                </div>
+                                <div class="latest-product__item__text">
+                                    <h6>Pantolon</h6>
+                                    <span>800₺</span>
+                                </div>
+                            </a>
+                            <a href="#" class="latest-product__item">
+                                <div class="latest-product__item__pic">
+                                    <img src="~/ogani-master/ogani-master/img/tişört kadın.jpg" alt="">
+                                </div>
+                                <div class="latest-product__item__text">
+                                    <h6>Tişört</h6>
+                                    <span>500₺</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="latest-product__text">
+                    <h4>Erkek</h4>
+                    <div class="latest-product__slider owl-carousel">
+                        <div class="latest-prdouct__slider__item">
+                            <a href="#" class="latest-product__item">
+                                <div class="latest-product__item__pic">
+                                    <img src="~/ogani-master/ogani-master/img/ceket erkek.jpg" alt="">
+                                </div>
+                                <div class="latest-product__item__text">
+                                    <h6>Ceket</h6>
+                                    <span>1200₺</span>
+                                </div>
+                            </a>
+                            <a href="#" class="latest-product__item">
+                                <div class="latest-product__item__pic">
+                                    <img src="~/ogani-master/ogani-master/img/tişört erkek.jpg" alt="">
+                                </div>
+                                <div class="latest-product__item__text">
+                                    <h6>Tişört</h6>
+                                    <span>500₺</span>
+                                </div>
+                            </a>
+                            <a href="#" class="latest-product__item">
+                                <div class="latest-product__item__pic">
+                                    <img src="~/ogani-master/ogani-master/img/gömlek erkek.jpg" alt="">
+                                </div>
+                                <div class="latest-product__item__text">
+                                    <h6>Gömlek</h6>
+                                    <span>600₺</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="latest-prdouct__slider__item">
+                            <a href="#" class="latest-product__item">
+                                <div class="latest-product__item__pic">
+                                    <img src="~/ogani-master/ogani-master/img/pantolon erkek.jpg" alt="">
+                                </div>
+                                <div class="latest-product__item__text">
+                                    <h6>Pantolon</h6>
+                                    <span>800₺</span>
+                                </div>
+                            </a>
+                            <a href="#" class="latest-product__item">
+                                <div class="latest-product__item__pic">
+                                    <img src="~/ogani-master/ogani-master/img/ayakkabı erkek.jpg" alt="">
+                                </div>
+                                <div class="latest-product__item__text">
+                                    <h6>Ayakkabı</h6>
+                                    <span>700₺</span>
+                                </div>
+                            </a>
+                            <a href="#" class="latest-product__item">
+                                <div class="latest-product__item__pic">
+                                    <img src="~/ogani-master/ogani-master/img/cüzdan erkek.jpg" alt="">
+                                </div>
+                                <div class="latest-product__item__text">
+                                    <h6>Cüzdan</h6>
+                                    <span>500₺</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="latest-product__text">
+                    <h4>Çocuk</h4>
+                    <div class="latest-product__slider owl-carousel">
+                        <div class="latest-prdouct__slider__item">
+                            <a href="#" class="latest-product__item">
+                                <div class="latest-product__item__pic">
+                                    <img src="~/ogani-master/ogani-master/img/çocuk tişört.jpg" alt="">
+                                </div>
+                                <div class="latest-product__item__text">
+                                    <h6>Tişört</h6>
+                                    <span>500₺</span>
+                                </div>
+                            </a>
+                            <a href="#" class="latest-product__item">
+                                <div class="latest-product__item__pic">
+                                    <img src="~/ogani-master/ogani-master/img/gömlek çocuk.jpg" alt="">
+                                </div>
+                                <div class="latest-product__item__text">
+                                    <h6>Gömlek</h6>
+                                    <span>700₺</span>
+                                </div>
+                            </a>
+                            <a href="#" class="latest-product__item">
+                                <div class="latest-product__item__pic">
+                                    <img src="~/ogani-master/ogani-master/img/ceket çocuk.jpg" alt="">
+                                </div>
+                                <div class="latest-product__item__text">
+                                    <h6>Ceket</h6>
+                                    <span>900₺</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="latest-prdouct__slider__item">
+                            <a href="#" class="latest-product__item">
+                                <div class="latest-product__item__pic">
+                                    <img src="~/ogani-master/ogani-master/img/elbise çocuk.jpg" alt="">
+                                </div>
+                                <div class="latest-product__item__text">
+                                    <h6>Elbise</h6>
+                                    <span>800₺</span>
+                                </div>
+                            </a>
+                            <a href="#" class="latest-product__item">
+                                <div class="latest-product__item__pic">
+                                    <img src="~/ogani-master/ogani-master/img/şapka çocuk.jpg" alt="">
+                                </div>
+                                <div class="latest-product__item__text">
+                                    <h6>Şapka</h6>
+                                    <span>400₺</span>
+                                </div>
+                            </a>
+                            <a href="#" class="latest-product__item">
+                                <div class="latest-product__item__pic">
+                                    <img src="~/ogani-master/ogani-master/img/ayakkabı çocuk.jpg" alt="">
+                                </div>
+                                <div class="latest-product__item__text">
+                                    <h6>Ayakkabı</h6>
+                                    <span>700₺</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

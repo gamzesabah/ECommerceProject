@@ -1,22 +1,14 @@
 ﻿@model List<ECommerceProject.Entities.Banner>
-<div class="banner">
-    <div class="container">
-        <div class="row">
-            @foreach (var item in Model)
-            {
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="banner__pic position-relative">
-                        <img src="@item.ImageUrl" alt="" style="width:50%;">
-                        <div class="banner__text">
-                            <h2>@item.Title</h2>
-                            <p>@item.Description</p>
-                            <a href="#" class="btn btn-primary">İncele</a>
-                        </div>
-                    </div>
-                </div>
-            }
 
+@foreach (var item in Model)
+{
+    <div class="banner" style="background-image: url('@item.ImageUrl'); background-repeat: no-repeat; background-size: cover; background-position: center; height: 320px; display: flex; align-items: center; justify-content: center; margin-bottom: 40px;">
+        <div style="background-color: rgba(0, 0, 0, 0.5); padding: 30px 60px; border-radius: 10px; text-align: center;">
+            <h1 style="font-size: 40px; color: white; font-weight: 800; margin-bottom: 15px; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);"> @item.Title</h1>
+            <p style="color: white; font-size: 18px; margin-bottom: 20px;">@item.Description</p>
+            <a href="/cok-satanlar" style="background-color: #1f2a40; color: white; padding: 12px 24px; font-weight: bold; text-decoration: none; border-radius: 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); transition: background-color 0.3s;">
+                Alışverişe Başla
+            </a>
         </div>
     </div>
-</div>
-
+}
