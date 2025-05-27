@@ -181,6 +181,10 @@
     <Compile Include="Migrations\202505271514532_CategoryLink.Designer.cs">
       <DependentUpon>202505271514532_CategoryLink.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202505271612138_ModelChanged.cs" />
+    <Compile Include="Migrations\202505271612138_ModelChanged.Designer.cs">
+      <DependentUpon>202505271612138_ModelChanged.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -262,9 +266,40 @@
     <Content Include="ogani-master\ogani-master\img\gömlek erkek.jpg" />
     <Content Include="ogani-master\ogani-master\img\gömlek kadın.jpg" />
     <Content Include="ogani-master\ogani-master\img\hero\banner.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\ceket1.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\ceket2.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\ceket3.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\ceket4.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\ceket5.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\ceket6.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\elbise1.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\elbise2.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\elbise3.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\elbise4.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\elbise5.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\elbise6.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\elbise7.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\etek1.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\etek2.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\etek3.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\etek4.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\etek5.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\etek6.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\gömlek1.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\gömlek2.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\gömlek3.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\gömlek4.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\pantalon1.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\pantalon2.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\pantalon3.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\pantalon4.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\takım1.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\takım2.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\takım3.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\takım4.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Kadın resimleri\takım5.jpg" />
     <Content Include="ogani-master\ogani-master\img\kadın1.jpg" />
     <Content Include="ogani-master\ogani-master\img\kız-erkek çocuk.jpg" />
-
     <Content Include="ogani-master\ogani-master\img\language.png" />
     <Content Include="ogani-master\ogani-master\img\latest-product\lp-1.jpg" />
     <Content Include="ogani-master\ogani-master\img\latest-product\lp-2.jpg" />
@@ -302,6 +337,16 @@
     <Content Include="ogani-master\ogani-master\img\product\product-9.jpg" />
     <Content Include="ogani-master\ogani-master\img\tişört erkek.jpg" />
     <Content Include="ogani-master\ogani-master\img\tişört kadın.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Çanta resimleri\canta1.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Çanta resimleri\canta10.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Çanta resimleri\canta2.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Çanta resimleri\canta3.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Çanta resimleri\canta4.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Çanta resimleri\canta5.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Çanta resimleri\canta6.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Çanta resimleri\canta7.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Çanta resimleri\canta8.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Çanta resimleri\canta9.jpg" />
     <Content Include="ogani-master\ogani-master\img\Çocuk resimleri\Erkek çocuk ceket.jpg" />
     <Content Include="ogani-master\ogani-master\img\Çocuk resimleri\Erkek çocuk eşofman takımı.jpg" />
     <Content Include="ogani-master\ogani-master\img\Çocuk resimleri\Erkek çocuk eşofman takımı2.jpg" />
@@ -502,6 +547,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202505271514532_CategoryLink.resx">
       <DependentUpon>202505271514532_CategoryLink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202505271612138_ModelChanged.resx">
+      <DependentUpon>202505271612138_ModelChanged.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
