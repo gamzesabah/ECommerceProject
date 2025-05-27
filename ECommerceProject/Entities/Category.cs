@@ -11,6 +11,7 @@ namespace ECommerceProject.Entities
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
         public string ImageUrl { get; set; }
+        public string Link { get; set; }
 
         public virtual List<Product> Products { get; set; }
     }
