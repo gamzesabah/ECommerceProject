@@ -1,78 +1,75 @@
-﻿<header class="header">
+﻿<header id="navbar" class="header">
     <div class="header__top">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6">
                     <div class="header__top__left">
                         <ul>
-                            <li><i class="fa fa-envelope"></i> velurıum@gmail.com</li>
+                            <li><i class="fa fa-envelope"></i> velurium@gmail.com</li>
                             <li>500 TL ve üzeri kargo bedava!</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="header__top__right">
+                <div class="col-lg-6 col-md-6 text-end">
+                    <div class="header__top__right d-flex justify-content-end align-items-center gap-3">
                         <div class="header__top__right__social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-linkedin"></i></a>
                             <a href="#"><i class="fa fa-pinterest-p"></i></a>
                         </div>
-                        <div class="header__top__right__language">
-                            <img src="" alt="">
-                            <div>Türkçe</div>
-                            <span class="arrow_carrot-down"></span>
-                            <ul>
+                        <div class="header__top__right__language position-relative">
+                            <div class="language-toggle">Türkçe <span class="arrow_carrot-down"></span></div>
+                            <ul class="language-dropdown">
                                 <li><a href="#">Türkçe</a></li>
                                 <li><a href="#">İngilizce</a></li>
                             </ul>
                         </div>
                         <div class="header__top__right__auth">
-                            <a href="#"><i class="fa fa-user"></i>Giriş Yap</a>
+                            <a href="#"><i class="fa fa-user"></i> Giriş Yap</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2">
+
+    <div class="container py-3">
+        <div class="row align-items-center">
+            <div class="col-lg-2 col-6">
                 <div class="header__logo">
-                    <a href="~/ogani-master/ogani-master/index.html"><img src="img/logo.png" alt=""></a>
+                    <a href="~/ogani-master/ogani-master/index.html">
+                        <img src="~/ogani-master/ogani-master/img/logo.png" alt="VELURIUM Logo">
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-8">
-            <nav class="header__menu">
-                <ul>
-                    <li class="active"><a href="~/ogani-master/ogani-master/index.html">Ana Sayfa</a></li>
-                    <li><a href="~/ogani-master/ogani-master/shop-grid.html">Mağaza</a></li>
-                    <li>
-                        <a href="#">Sayfalar</a>
-                        <ul class="header__menu__dropdown">
-                            <li><a href="~/ogani-master/ogani-master/shop-details.html">Ürün Detayları</a></li>
-                            <li><a href="~/ogani-master/ogani-master/shoping-cart.html">Alışveriş Sepeti</a></li>
-                            <li><a href="~/ogani-master/ogani-master/checkout.html">Ödeme</a></li>
-                            <li><a href="~/ogani-master/ogani-master/blog-details.html">Blog Detayları</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="~/ogani-master/ogani-master/blog.html">Blog</a></li>
-                    <li><a href="~/ogani-master/ogani-master/contact.html">İletişim</a></li>
-                </ul>
-            </nav>
-        </div>
+            <div class="col-lg-8" style="text-align: center; padding-left: 120px;">
+                <nav class="navbar">
+                    <ul style="display: inline-block; padding: 0; margin: 0; list-style: none;">
+                        <li style="display: inline; margin: 0 15px;">
+                            <a href="#navbar" style="color: black; font-weight: bold; text-decoration: none;">Anasayfa</a>
+                        </li>
+                        <li style="display: inline; margin: 0 15px;">
+                            <a href="#blog" style="color: black; font-weight: bold; text-decoration: none;">Hakkımızda</a>
+                        </li>
+                        <li style="display: inline; margin: 0 15px;">
+                            <a href="#contact" style="color: black; font-weight: bold; text-decoration: none;">İletişim</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
 
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-6 text-end">
                 <div class="header__cart">
-                    <ul>
+                    <ul class="list-unstyled d-flex justify-content-end gap-3 m-0">
                         <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                         <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                     </ul>
                 </div>
+                <div class="humberger__open d-lg-none">
+                    <i class="fa fa-bars"></i>
+                </div>
             </div>
-        </div>
-        <div class="humberger__open">
-            <i class="fa fa-bars"></i>
         </div>
     </div>
 </header>
