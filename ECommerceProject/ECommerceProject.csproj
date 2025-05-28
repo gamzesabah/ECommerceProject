@@ -141,6 +141,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NewSeasonController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ShoesController.cs" />
     <Compile Include="Controllers\WomanClothesController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Address.cs" />
@@ -223,6 +224,14 @@
     <Content Include="ogani-master\ogani-master\fonts\ElegantIcons.svg" />
     <Content Include="ogani-master\ogani-master\fonts\fontawesome-webfont.svg" />
     <Content Include="ogani-master\ogani-master\img\ayakkabı erkek.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\Asics Erkek ayakkabı.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\Converse.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\Converse2.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\Converse3.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\new balance beyaz ayakkabı.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\new balance erkek ayakkabı.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\new balance siyahlı ayakkabı.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\Nike erkek ayakkabı.jpg" />
     <Content Include="ogani-master\ogani-master\img\ayakkabı çocuk.jpg" />
     <Content Include="ogani-master\ogani-master\img\banner\banner-1.jpg" />
     <Content Include="ogani-master\ogani-master\img\banner\banner-2.jpg" />
@@ -448,6 +457,19 @@
     <Content Include="ogani-master\ogani-master\img\Çocuk resimleri\Kız çocuk pantolon.jpg" />
     <Content Include="ogani-master\ogani-master\img\Çocuk resimleri\Erkek çocuk gömlek5.jpg" />
     <Content Include="ogani-master\ogani-master\img\Çocuk resimleri\Erkek çocuk tişört2.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\Nike spor ayakkabı.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\Nike beyaz spor ayakkabı.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\Nike P600.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\Nike AL8.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\Nike Dunk Low.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\adidas mavi.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\Adidas gazelle yeşil.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\vans ayakkabı.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\Ayakkabı banner.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\pembe gazelle ayakkabı.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\Skechers kadın ayakkabı.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\Mavi gazelle ayakkabı.jpg" />
+    <Content Include="ogani-master\ogani-master\img\Ayakkabı resimleri\Açık renk vans ayakkabı.jpg" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -488,6 +510,7 @@
     <Content Include="Views\ChildrenClothes\Index.cshtml" />
     <Content Include="Views\WomanClothes\Index.cshtml" />
     <Content Include="Views\Bags\Index.cshtml" />
+    <Content Include="Views\Shoes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
