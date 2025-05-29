@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 using ECommerceProject.Context;
@@ -14,24 +13,15 @@ namespace ECommerceProject.Controllers
         // GET: BestSeller
         public ActionResult Index()
         {
-            // En çok satan ürünleri örnek olarak satış sayısına göre getiriyoruz.
-            // Burada Product tablosunda SalesCount diye bir sütun olduğunu varsayıyorum.
+            var categories = new[] { "Kadın", "Erkek", "Çocuk" };
+
             var bestSellers = Db.Products
-                                //.OrderByDescending(p => p.SalesCount) // en çok satandan azalana sıralama
-                                .Take(10) // İlk 10 ürünü al
-                                .ToList();
+                .Where(p => categories.Contains(p.Category.CategoryName))
+                .GroupBy(p => p.Category.CategoryName)
+                .SelectMany(g => g.OrderByDescending(p => p.ProductId).Take(10)) // En son eklenen 10 ürün
+                .ToList();
 
             return View(bestSellers);
-        }
-
-        // Opsiyonel: Ürün Detay Sayfası
-        public ActionResult Details(int id)
-        {
-            var product = Db.Products.Find(id);
-            if (product == null)
-                return HttpNotFound();
-
-            return View(product);
         }
     }
 }
